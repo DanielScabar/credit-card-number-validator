@@ -92,5 +92,11 @@ const idInvalidCardCompanies = (arr) => {
   return removeDuplicates(companies);
 };
 
+// Transform a string in to a array of numbers.
+const convertStringToArray = str => {
+  const newArray = str.split('');
+  return newArray.map(element => Number(element));
+};
+
 console.log(invalidCards);
 console.log(idInvalidCardCompanies(invalidCards));
